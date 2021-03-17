@@ -27,6 +27,15 @@ body {
     }
 }
 
+@media (max-width: 560px) {
+    body {
+        margin: 0;
+    }
+    #app {
+        position: absolute;
+    }
+}
+
 .entry {
     background: rgba(59, 74, 107, .4);
     padding: 8px;
@@ -124,6 +133,7 @@ button {
     font-family: 'Oswald', sans-serif;
     border: none;
     box-shadow: 2px 4px 5px #444;
+    margin-top: 8px;
 }
 
 h1 {
