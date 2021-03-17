@@ -21,7 +21,7 @@ unitElm.addEventListener('change', () => {
 
 // Create a new date instance dynamically with JS
 let d = new Date();
-let newDate = d.getMonth() + '.' + d.getDate() + '.' + d.getFullYear();
+let newDate = d.getMonth() + 1 + '.' + d.getDate() + '.' + d.getFullYear();
 
 // async api call
 const getData = async(url = '') => {
@@ -61,9 +61,9 @@ async function updateUI() {
     try {
         console.log(req);
         const data = await req.json();
-        dateElm.innerHTML = `<b>Date:</b> ${data.date}`;
-        tempElm.innerHTML = `<b>Temperature:</b> ${data.temperature}`;
-        contentElm.innerHTML = `<b>Your Feelings:</b> ${data.userResponse}`;
+        dateElm.innerHTML = `<b>Date:</b> <span>${data.date}</span>`;
+        tempElm.innerHTML = `<b>Temperature:</b> <span>${data.temperature}</span>`;
+        contentElm.innerHTML = `<b>Your Feelings:</b> <span>${data.userResponse}</span>`;
     } catch (e) {
         console.log(`ERROR: \n${e}`)
     }

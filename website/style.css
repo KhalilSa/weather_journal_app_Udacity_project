@@ -8,8 +8,8 @@ body {
     grid-auto-rows: minmax(150px, auto);
     /* grid-template-columns:  */
     height: 100%;
-    background: #f23557;
-    color: #f0d43a;
+    background: #E65F5C;
+    color: #FFFF82;
     justify-content: center;
     grid-gap: 1em;
     font-size: 20px;
@@ -94,9 +94,20 @@ https://css-tricks.com/styling-a-select-like-its-2019/ */
     font-weight: normal;
 }
 
-.headline {}
+#entry-holder span {
+    color: #F5F7DC;
+}
 
-.title {}
+.headline {
+    font-size: 3em;
+    letter-spacing: -2px;
+    line-height: 120%;
+}
+
+.title {
+    font-variant: petite-caps;
+    border-bottom: 1px solid antiquewhite;
+}
 
 .form-group {
     max-width: 600px;
@@ -117,8 +128,8 @@ input {
     display: block;
     height: 60px;
     width: 320px;
-    background: #22b2da;
-    color: #f0d43a;
+    background: #B0D297;
+    color: #451A34;
     font-size: 20px;
     font-family: 'Oswald', sans-serif;
     border: none;
@@ -141,7 +152,7 @@ h1 {
 }
 
 textarea {
-    background: #22b2da;
+    background: #0F0326;
     color: #f0d43a;
     font-size: 20px;
     font-family: 'Oswald', sans-serif;
